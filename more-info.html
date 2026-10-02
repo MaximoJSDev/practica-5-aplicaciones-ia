@@ -15,6 +15,30 @@
       * {
         box-sizing: border-box;
       }
+      body {
+        background-color: #ebecf1;
+      }
+      main {
+        width: 592px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      div {
+        display: flex;
+        align-items: center;
+      }
+      a {
+        background: #684cff;
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+        margin-top: 4px;
+        margin-right: 16px;
+        font-family: "Clarity City", sans-serif;
+      }
       h1 {
         font-size: 32px;
         margin-top: 40px;
@@ -30,17 +54,20 @@
       textarea {
         width: 400px;
         padding: 8px;
-        background-color: #d4d5d6;
+        background-color: #fff;
         border-radius: 4px;
         font-family: "Syne", sans-serif;
         font-size: 16px;
-        border: none;
+        border: 1px solid #80808073;
       }
       input[type="submit"] {
         padding: 10px 16px;
         background-color: #0085c8;
         color: #fff;
         border: none;
+        display: flex;
+        font-size: 16px;
+        justify-self: self-end;
         border-radius: 4px;
         margin-top: 15px;
       }
@@ -51,8 +78,11 @@
   </head>
   <body>
     <center>
-      <h1>Obtener más información</h1>
-      <form action="">
+      <main>
+        <div>
+          <a href="/index.html"> <- Volver al inicio </a>
+          <h1>Obtener más información</h1>
+        </div>
         <table>
           <tbody>
             <tr>
@@ -64,7 +94,7 @@
               <td><input type="text" placeholder="Lopez" /></td>
             </tr>
             <tr>
-              <td>Ingresa información:</td>
+              <td>Información:</td>
               <td>
                 <textarea name="" id=""></textarea>
               </td>
@@ -74,16 +104,14 @@
               <td><input type="email" placeholder="coreo@gmail.com" /></td>
             </tr>
             <tr>
+              <td></td>
               <td>
                 <input type="submit" value="Enviar datos" />
               </td>
             </tr>
           </tbody>
         </table>
-      </form>
-
-      <br /><br />
-      <a href="/index.html"> Volver al inicio </a>
+      </main>
     </center>
   </body>
 </html>

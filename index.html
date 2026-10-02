@@ -23,6 +23,7 @@
       body {
         font-family: "Clarity City", sans-serif;
         font-family: "Syne", sans-serif;
+        background-color: #ebecf1;
       }
       h1,
       h4 {
@@ -30,9 +31,13 @@
       }
       table {
         border-collapse: collapse;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 15px;
+        border: 1px solid;
       }
       main {
-        width: 900px;
+        width: 1000px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -40,7 +45,16 @@
         margin: auto;
       }
       td {
+        width: 300px;
+        padding: 10px 15px;
+        border: 1px solid gray;
+      }
+      main > a {
+        background: #684cff;
         padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #fff;
       }
     </style>
   </head>
@@ -56,20 +70,20 @@
     <main>
       <center>
         <!-- Tabla para organizar la informacion de las aplicaciones en columnas y filas -->
-        <table border="2">
+        <table>
           <!-- Primera fila (tr): Contiene las imagenes (logos) de las aplicaciones -->
           <tr>
-            <!-- Celda (td) con ancho de 200px que muestra el logo de ChatGPT -->
-            <td width="300px">
-              <img width="150px" src="./1.png" alt="ChatGPT" />
+            <!-- Celda (td) con el logo de ChatGPT -->
+            <td>
+              <img width="140px" src="./1.png" alt="ChatGPT" />
             </td>
             <!-- Celda con el logo de Gemini -->
-            <td width="300px">
-              <img src="./2.png" alt="Gemini" />
+            <td>
+              <img width="140px" src="./2.png" alt="Gemini" />
             </td>
             <!-- Celda con el logo de Copilot -->
-            <td width="300px">
-              <img src="./3.png" alt="Copilot" />
+            <td>
+              <img width="140px" src="./3.png" alt="Copilot" />
             </td>
             <!-- Segunda fila: Contiene los nombres de cada aplicacion -->
           </tr>
